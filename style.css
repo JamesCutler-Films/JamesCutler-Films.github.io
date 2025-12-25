@@ -32,6 +32,7 @@ main {
     padding: 0 20px;
 }
 
+/* Film Grid */
 .film-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
