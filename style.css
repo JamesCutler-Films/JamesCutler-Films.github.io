@@ -32,27 +32,40 @@ main {
     padding: 0 20px;
 }
 
-/* Films grid */
 .film-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
 }
 
 .film-card {
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .film-card img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
 .film-card h2 {
     margin-top: 12px;
+    font-size: 16px;
     font-weight: normal;
-    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.film-card img {
+    transition: opacity 0.2s ease;
+}
+
+.film-card:hover img {
+    opacity: 0.85;
 }
 
 /* Film page */
