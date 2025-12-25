@@ -50,7 +50,8 @@ main {
 
 .film-card img {
     width: 100%;
-    height: auto;
+    height: 420px;        /* choose your preferred poster height */
+    object-fit: cover;   /* crops instead of stretching */
     display: block;
 }
 
