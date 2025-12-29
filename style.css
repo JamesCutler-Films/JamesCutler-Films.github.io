@@ -50,8 +50,8 @@ main {
 
 .film-card img {
     width: 100%;
-    height: 420px;        /* choose your preferred poster height */
-    object-fit: cover;   /* crops instead of stretching */
+    aspect-ratio: 2 / 3;   /* classic film poster ratio */
+    object-fit: contain;  /* NO cropping */
     display: block;
 }
 
