@@ -32,6 +32,33 @@ main {
     padding: 0 20px;
 }
 
+/* Horizontal film gallery */
+.film-gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+}
+
+/* Hide scrollbar but keep scrolling */
+.film-gallery::-webkit-scrollbar {
+    display: none;
+}
+.film-gallery {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.film-gallery img {
+    height: 420px;               /* consistent visual height */
+    width: auto;                /* preserves aspect ratio */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+
 /* Film Grid */
 .film-grid {
     display: grid;
