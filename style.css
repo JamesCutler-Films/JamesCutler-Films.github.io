@@ -123,3 +123,40 @@ main {
     flex: 1;
 }
 
+/* =========================
+   Responsive Design
+   ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .film-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        font-size: 16px;
+    }
+
+    .film-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .film-card h2 {
+        font-size: 18px;
+    }
+}
