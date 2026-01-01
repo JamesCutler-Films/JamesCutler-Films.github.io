@@ -110,13 +110,16 @@ main {
 }
 
 /* About page */
-.about {
-    display: flex;
-    gap: 60px;
-}
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-.about img {
-    width: 280px;
+    .about img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 .about-text {
@@ -158,5 +161,11 @@ main {
 
     .film-card h2 {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
     }
 }
